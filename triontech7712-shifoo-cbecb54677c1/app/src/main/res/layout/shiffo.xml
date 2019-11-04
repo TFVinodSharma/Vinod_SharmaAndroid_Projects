@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/dhoni" />
+
+    <TextView
+        android:id="@+id/myImageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myImageView"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="Hello"
+        android:textColor="#000000" />
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_below="@+id/myImageViewText"
+        android:max="100"
+        android:minWidth="100dp"
+        android:progress="80" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/myImageView"
+        android:padding="10dp"
+        android:src="@mipmap/heart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mahendra Singh Dhoni"
+        android:id="@+id/vinods"
+        android:textSize="14sp"
+        android:layout_below="@id/myImageView"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="crickter"
+        android:textSize="14sp"
+        android:id="@+id/designaion_celi"
+        android:layout_below="@id/vinods"/>
+
+
+    <!-- <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/dhoni"
+         android:src="@mipmap/dhoni"/>
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="#7ad7d7d7"
+         android:gravity="center"
+         android:text="Juneja Art Gallery"
+         android:textColor="#000000"
+         android:textSize="15sp"/>-->
+</RelativeLayout>

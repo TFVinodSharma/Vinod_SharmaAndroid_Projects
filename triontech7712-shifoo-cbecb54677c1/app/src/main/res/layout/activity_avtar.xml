@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="shifoo.com.app.modules.login.view.AvtarActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@mipmap/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="@dimen/dimen_4dp">
+
+
+        <TextView
+            android:id="@+id/txthi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtavtar"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimens_18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_avtarheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/txt_chooseface"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimen_14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridvew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:numColumns="3">
+
+    </GridView>
+
+    <Button
+        android:id="@+id/selectavtar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundgrey"
+        android:elevation="5dp"
+
+        android:padding="@dimen/dimen_12dp"
+        android:text="@string/txt_selectbtn"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+
+</LinearLayout>

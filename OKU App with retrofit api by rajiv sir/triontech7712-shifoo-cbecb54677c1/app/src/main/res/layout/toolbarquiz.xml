@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:layout_width="fill_parent"
+    android:layout_height="?actionBarSize"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@mipmap/backbtn"
+        android:layout_alignParentLeft="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/back1"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/coins"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="233"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/back1"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<!--
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/coins"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"/>
+-->
+
+<!--
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="233"
+        android:layout_toRightOf="@+id/imageView1"
+       />
+-->
+
+
+    <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/back"
+            android:src="@drawable/backbtn"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/back1"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"
+            android:alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/coins"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="233"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/back1"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold" />
+    -->
+
+
+    <!-- <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:contentDescription="@string/abc_action_bar_up_description"
+        >
+
+         <ImageView
+
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:src="@drawable/coins"
+         android:scaleType="fitCenter" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:text="233"
+             android:layout_marginRight="10dp"
+             android:textStyle="bold" />
+
+     </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="shifoo.com.app.modules.login.view.RegisterNameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/nameheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/txt_headername"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_14dp" />
+
+        <TextView
+            android:id="@+id/textHeadingtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_registerheading"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimen_16dp" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/txt_name"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimen_12dp"
+            android:textStyle="bold" />
+
+
+        <!--<EditText-->
+            <!--android:id="@+id/personname"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+            <!--android:backgroundTint="@color/black"-->
+            <!--android:cursorVisible="true"-->
+            <!--android:hint="Enter your name"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:maxLines="1"-->
+            <!--android:selectAllOnFocus="false"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/TopHeadingColor"-->
+            <!--android:textColorHighlight="@color/black"-->
+            <!--android:textCursorDrawable="@color/grey"-->
+            <!--android:textSize="@dimen/txt_size20" />-->
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/personname_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_toRightOf="@+id/country_code_tv">
+
+            <EditText
+                android:id="@+id/person_name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:hint=""
+
+                android:inputType="text"
+                android:maxLength="36"
+                android:maxLines="1"
+
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#D8D8D8"
+
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/welcomeproceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundgrey"
+            android:padding="@dimen/dimen_14dp"
+            android:text="@string/btn_proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

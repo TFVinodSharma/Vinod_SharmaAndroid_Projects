@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.view.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/FirstLayout">
+        <ImageView
+            android:id="@+id/getImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/dhoni" />
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/getimage"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="#616161"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:text="ImageTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            tools:ignore="RtlCompat" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/secondLayout">
+        <LinearLayout
+            android:id="@+id/bottom_panel"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="3"
+
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="#424242"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:alpha="3"
+                android:id="@+id/btnShareLink"
+                android:textAllCaps="false"
+                android:text="Share Link"/>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:alpha="3"
+                android:background="@color/streat_line" />
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="#424242"
+                android:textColor="#FFFFFF"
+                android:alpha="3"
+                android:id="@+id/btnShareImage"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:text="Share image"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

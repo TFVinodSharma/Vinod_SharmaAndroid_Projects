@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkblue">#01579B</color>
+    <color name="grey">#888888</color>
+    <color name="lightblue">#E1F5FE</color>
+    <color name="lessblack">#424242</color>
+    <color name="blue">#651FFF</color>
+    <color name="yellow">#FFE35A</color>
+    <color name="btngrey">#E1E1E1</color>
+    <color name="backgroundcolor">#eeeeee</color>
+    <color name="secondblack">#2A2A2A</color>
+
+    <color name="privacy_policy_color">#393F5F</color>
+    <color name="disable_color">#D8D8D8</color>
+    <color name="transperent">#00000000</color>
+
+    <color name="color_dark_grey">#767676</color>
+
+    <!--Sketch Color-->
+    <color name="TopHeadingColor">#393F5F</color>
+    <color name="SecondHeadingColor">#888888</color>
+    <color name="PrivacyCollor">#999999</color>
+    <color name="OtpViewColor">#979797</color>
+    <color name="faqcolor">#848484</color>
+    <color name="ColorBackground">#F9F9F9</color>
+    <color name="cccolor">#595959</color>
+    <color name="celebrityfanscolor">#6E6E6E</color>
+    <color name="vbtngreencolor">#41E6A9</color>
+    <color name="vbtnredcolor">#EB5768</color>
+    <color name="vcorrectgreencolor">#41E6A9</color>
+    <color name="resendcodecolor">#B0AFAF</color>
+    <color name="ask_question_background">#C5C5F3</color>
+    <color name="ask_question_text_color">#3F3843</color>
+    <color name="bend_onesidecolor">#9F9FF7</color>
+
+</resources>

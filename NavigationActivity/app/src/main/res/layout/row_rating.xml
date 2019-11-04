@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give a score "
+            android:id="@+id/givescore"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColor="@color/faqcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On a Scale of 1-5,how well do you know your team?"
+            android:textSize="@dimen/dimens_18dp"
+            android:padding="5dp"
+            android:id="@+id/Scaleid"
+            android:layout_below="@+id/givescore"
+
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I being lowest and 5 being highest"
+            android:textSize="@dimen/dimens_18dp"
+            android:padding="5dp"
+            android:id="@+id/beinglowest"
+            android:layout_below="@+id/Scaleid"
+
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp"
+            android:elevation="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/beinglowest"
+            android:gravity="center_vertical"
+            android:layout_marginTop="50dp">
+
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomRatingBar"
+                android:numStars="5"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:id="@+id/ratingBar1"
+
+                android:stepSize="1" />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Submit"
+                android:id="@+id/likesubmit1"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="@color/yellow" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

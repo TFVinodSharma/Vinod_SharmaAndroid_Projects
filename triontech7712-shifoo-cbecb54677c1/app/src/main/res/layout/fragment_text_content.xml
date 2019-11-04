@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="shifoo.com.app.modules.cardviewquiz.fragment.TextContentFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contentheading"
+        android:id="@+id/txtdummy"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textColor="@color/faqcolor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contentheading"
+        android:id="@+id/txtheadingquiz"
+        android:textSize="@dimen/dimen_14dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textColor="@color/TopHeadingColor"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contentquiz"
+        android:id="@+id/txtquizcontent"
+        android:textColor="@color/faqcolor"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/dimen_16dp"
+        />
+
+</LinearLayout>
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/swipe"
+            android:id="@+id/swipeimage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Swipe"
+            android:textSize="@dimen/dimen_16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_below="@+id/swipeimage"/>
+    </RelativeLayout>
+-->
+
+
+
+</LinearLayout>

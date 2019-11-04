@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="shifoo.com.app.modules.home.view.FAQActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faqtoolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type  your question"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/dimen_16dp"
+        android:typeface="serif"
+        android:textColor="@color/faqcolor"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/dimen_16dp"
+        android:typeface="sans"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:hint="Type somethings" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round"
+        android:textAllCaps="false"
+        android:layout_marginTop="350dp"/>
+
+</LinearLayout>

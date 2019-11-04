@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/avtar2"
+            android:elevation="5dp"
+            android:id="@+id/leaderimage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.7"
+            android:text="Aman Arrora"
+            android:layout_gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimen_16dp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="540"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:layout_weight="0.2"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimen_16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pts"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimen_16dp"
+            />
+    </LinearLayout>
+</LinearLayout>

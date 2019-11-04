@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:id="@+id/lineargotocard"
+    android:background="@drawable/roundcorner"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        android:elevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/backgroundplayer"
+                android:id="@+id/imagedata"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_12dp"
+                android:id="@+id/textdata"
+                android:text="Lorem Ipusm has been the industry"/>
+
+
+            <!--layout for profile complete percentage-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/percent"
+                    android:text=" 80%"/>
+            </LinearLayout>
+            <!-- layout for profile complete percentage over-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        />
+
+</LinearLayout>
+
+            <!-- count like layout start here-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+                <com.like.LikeButton
+                    android:id="@+id/heart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:anim_scale_factor="3"
+                    app:icon_size="10dp"
+                    app:icon_type="heart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/countlike"
+                    android:layout_gravity="center"
+                    android:text=" 800"/>
+            </LinearLayout>
+
+            <!-- count like layout over here-->
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

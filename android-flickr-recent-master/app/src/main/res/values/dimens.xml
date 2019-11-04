@@ -1,0 +1,4 @@
+<resources>
+    <!-- The height to completely hide the reset button-->
+    <dimen name="scroll_height_to_fade">64dp</dimen>
+</resources>

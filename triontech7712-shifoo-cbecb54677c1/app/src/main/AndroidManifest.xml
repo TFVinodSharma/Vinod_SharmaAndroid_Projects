@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="oku.app">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/resource"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="shifoo.com.app.modules.chooseheros.view.CelebrityMoreInfoActivity"
+            android:parentActivityName="shifoo.com.app.modules.chooseheros.view.AboutCelebrityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver android:name="shifoo.com.app.BroadCastReciever.SmsReciever" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="52cd3444fdb68d1a198ed336931b7909858e980c" />
+
+        <activity
+            android:name="shifoo.com.app.modules.chooseheros.view.ChooseHerosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.home.view.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.login.view.OtpActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.login.view.RegisterNameActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.login.view.AvtarActivity"
+            android:label=""
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="shifoo.com.app.modules.login.view.PrivacyPolicyActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.login.view.TermsofuseActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.profile.view.ProfileActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="shifoo.com.app.modules.splash.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="shifoo.com.app.modules.home.view.AboutUsActivity"
+            android:label="About Us" />
+        <activity
+            android:name="shifoo.com.app.modules.home.view.FAQActivity"
+            android:label="Ask a Question"
+            android:parentActivityName="shifoo.com.app.modules.chooseheros.view.AboutCelebrityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="shifoo.com.app.modules.cardviewquiz.view.QuizMainActivity"
+            android:label=""
+            android:parentActivityName="shifoo.com.app.modules.chooseheros.view.AboutCelebrityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="shifoo.com.app.modules.chooseheros.view.AboutCelebrityActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name="shifoo.com.app.modules.login.view.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+        </activity>
+    </application>
+
+</manifest>

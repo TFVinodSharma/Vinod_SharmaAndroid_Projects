@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_empty="true" android:drawable="@drawable/expanded_icon" />-->
+    <!--<item android:state_expanded="true" android:drawable="@drawable/collapsed_icon" />-->
+    <!--<item android:drawable="@drawable/expanded_icon"/>-->
+
+
+    <item android:state_empty="true">
+        <layer-list>
+            <item
+                android:left="0dp"
+                android:right="3dp"
+                android:top="20dp"
+                android:bottom="20dp"
+                android:drawable="@mipmap/view_more">
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_expanded="true">
+        <layer-list>
+            <item
+                android:left="0dp"
+                android:right="3dp"
+                android:top="20dp"
+                android:bottom="20dp"
+                android:drawable="@mipmap/dwn_arw">
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
+
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/dwn_arw"
+        android:state_expanded="true" />
+    <item android:drawable="@drawable/view_more" />
+
+
+</selector>-->

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shifoo.com.app.modules.cardviewquiz.fragment.ContentImageTextFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contenttextimage"
+    android:scaleType="fitXY"
+    android:src="@mipmap/degree"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contenttextimage"
+        android:id="@+id/txtcontentquizheading"
+        android:textColor="@color/TopHeadingColor"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/dimen_14dp"
+        android:text="@string/contentheading"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcontentquiz"
+        android:visibility="visible"
+        android:layout_below="@+id/txtcontentquizheading"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="5dp"
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="@color/faqcolor"
+        android:text="@string/contentquiz"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtcontentquiz"
+    android:gravity="bottom"
+    android:id="@+id/source"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentsource"
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="@color/faqcolor"
+        android:text="Source :"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/contentsourceinfo"
+    android:layout_toRightOf="@+id/contentsource"
+    android:textSize="@dimen/dimen_16dp"
+    android:textColor="@color/faqcolor"
+    android:text="@string/contentsource"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenttime"
+        android:layout_toRightOf="@+id/contentsourceinfo"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/faqcolor"
+        android:text="2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentmin"
+        android:layout_toRightOf="@+id/contenttime"
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="@color/faqcolor"
+        android:text="min"
+        />
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@+id/source">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:src="@drawable/swipe"
+        android:id="@+id/swipeimage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swipe"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/swipeimage"/>
+
+
+
+</RelativeLayout>
+-->
+
+</RelativeLayout>
+</LinearLayout>

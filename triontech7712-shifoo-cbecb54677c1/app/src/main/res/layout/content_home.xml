@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".modules.home.view.HomeActivity"
+        tools:showIn="@layout/app_bar_home">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relhome"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome back,"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_14dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_continue_reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/txt_welcome"
+        android:text="Continue learning"
+        android:textColor="@color/lessblack"
+        android:textSize="@dimen/dimen_16dp" />
+
+</RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/choose_herosrecycler"></android.support.v7.widget.RecyclerView>
+
+<!--
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dhoni"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/myImageView"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Hello"
+                android:textColor="#000000" />
+            <ProgressBar
+                android:id="@+id/pBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:layout_below="@+id/myImageViewText"
+                android:max="100"
+                android:minWidth="100dp"
+                android:progress="80" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/myImageView"
+                android:padding="10dp"
+                android:src="@mipmap/heart"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vinod"
+                android:id="@+id/vinods"
+                android:layout_below="@id/myImageView"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="crickter"
+                android:layout_below="@id/vinods"/>
+
+
+        </RelativeLayout>
+-->
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="5dp"
+            android:background="@drawable/dhoni"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="80%"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_12dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/heart"/>
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/pBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:minWidth="100dp"
+                android:progress="80" />
+
+        </LinearLayout>
+-->
+
+        <!--<TextView
+            android:id="@+id/txt_celebrity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/textpadding"
+            android:text="Mahendra Singh  Dhoni "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/1" />
+
+        <TextView
+            android:id="@+id/txt_celebrity_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/textpadding"
+            android:text="Cricketer "
+            android:textSize="@dimen/dimen_12dp16" />
+-->
+        <TextView
+            android:id="@+id/txt_celebrity_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp"
+            android:text="Mahendra Singh Dhoni is the most famous wicket keeper internationally "
+            android:textSize="@dimen/dimen_16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:gravity="fill_vertical"
+  android:orientation="vertical">
+ 
+  <!-- <TextView
+        android:id="@+id/siplabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="three tab"/> 
+        
+          <Button android:id="@+id/ForceStop" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_marginTop="100dip"
+		 android:width="150dip" android:height="50dip"	android:text="Force Stop" android:layout_marginLeft="12dip" />
+		
+		  <Button android:id="@+id/UnInstallUpdates" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_marginTop="100dip"
+		 android:width="150dip" android:height="50dip"	android:text="UnInstall" />
+     -->   
+        
+</LinearLayout>

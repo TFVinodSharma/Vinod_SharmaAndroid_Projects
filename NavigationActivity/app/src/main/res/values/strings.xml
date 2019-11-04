@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">NavigationActivity</string>
+
+
+    <string name="choosehero">Choose your Hero </string>
+    <string name="getstarted">Get Started</string>
+    <string name="seemore">See more</string>
+    <string name="txt_termcondition">Accept &amp; Continue</string>
+    <string name="txt_login">Are you ready to roll ?</string>
+    <string name="txt_loginheader">Enter your mobile no to begin</string>
+    <string name="txt_mobileno">Enter Mobile number</string>
+    <string name="txt_chechbox">By Signing up you agree to the</string>
+    <string name="txt_topheader">Did you receive our secret code ?</string>
+    <string name="txt_topheaderline">We are automatically detecting a SMS sent to your mobile number"</string>
+    <string name="txt_topphoneno">xxxxxx9898"</string>
+
+    <string name="verification_code_subtext">Please type the verification code sent to xxxxxx9876</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="txt_resend_code"><u>Resend Code</u></string>
+
+    <string name="sharemsg">Want to learn more about your favorite Hero?
+    <b>Join the Oku app learn, train and become like your favorite Hero today! </b></string>
+    <string name="txt_otp">Enter 4 Digits Code</string>
+
+
+    <string name="txt_headername">You"'"re an awesomeauce</string>
+    <string name="txt_name">Name</string>
+    <string name="btn_proceed">Proceed</string>
+    <string name="txtavtar">Give  your face a name </string>
+    <string name="txt_chooseface">Choose your favourite look</string>
+    <string name="txt_selectbtn">Select</string>
+    <string name="txt_unlockheros">You have unlocked 6 heros.</string>
+    <string name="txt_chooseheros">Choose your dream Hero and begin learning.</string>
+    <string name="txt_congrats">Congratulations </string>
+    <string name="nav_termcondition"> Term &amp; Conditions</string>
+    <string name="privacypolicy"> <u>Privacy Policy</u> and <u>Terms of use</u></string>
+
+    <string name="dhoniinfo">Mahendra Singh Dhoni, commonly known as MS Dhoni, is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014.</string>
+
+    <string name="hello_blank_fragment"> fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_registerheading">Tell us your name to proceed to next step</string>
+
+    <!-- string uses in verticalviewpager-->
+    <string name="contentheading">From senior to juniors :One Captain for all</string>
+    <string name="contentsource">sports.ndtv.com</string>
+    <string name="chooseanswer">Choose the right answer</string>
+    <string name="kalpnachawla"> As a little girl,Kalpana,always dreamt of becoming.</string>
+    <string name="kalpnachawlaquestion">Kalpanna realized that it would take consistency and persistance to make her dreams to make her dreamscome true.Hence she worked at NASA for 9 years until she became an astronout.  </string>
+    <string name="mcqcontent">In your opinion what makes a student a good choice for a class monitor</string>
+    <string name="contentquiz">Leadership is not easy .Manging a team is one of the trickest things in the world as there is no ONE way of being a leader.</string>
+
+    <!--Expandable list view data-->
+
+
+    <string name="text_intro">Intro</string>
+    <string name="text_bio">Bio</string>
+    <string name="text_batting_career">Batting Career</string>
+    <string name="text_major_awards">Major Awards and Prizes</string>
+    <string name="text_definning_movement">Definning Movement</string>
+    <string name="text_becomingdhoni">Becoming Dhoni</string>
+
+
+    <!-- for api -->
+    <string name="progress_title">Processing</string>
+    <string name="please_wait_progress">Please wait...</string>
+    <string name="not_valid_response">Response is not valid</string>
+    <string name="txt_processing">Processing</string>
+
+
+    <string-array name="string_array_Batting_Career">
+        <item>Test</item>
+        <item>ODI</item>
+        <item>IPL</item>
+        <item>T20</item>
+        <item>Home</item>
+    </string-array>
+
+    <string-array name="string_array_Batting_Career2">
+        <item>4000 runs in 90 matches(high score 224)</item>
+        <item>1077 runs in 350 matches(high 183)</item>
+        <item>IPL</item>
+        <item>1617 runs in 98 matches (high 56)</item>
+        <item>4686 runs in 190 matches (high 84)</item>
+    </string-array>
+
+    <string-array name="string_array_intro">
+        <item>Mahendra Singh Dhoni, commonly known as MS Dhoni, is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014.</item>
+
+    </string-array>
+
+    <string-array name="string_array_bio">
+        <item>NickName</item>
+        <item>D.O.B</item>
+        <item>Origin</item>
+        <item>Height</item>
+        <item>Batting Style</item>
+        <item>Bowling Style</item>
+        <item>Role(s)</item>
+        <item>ODI Debut </item>
+        <item>Team</item>
+    </string-array>
+
+    <string-array name="string_array_bio_second">
+        <item>MS Dhoni Captain Cool</item>
+        <item>7 july 1981</item>
+        <item>Ranchi ,India</item>
+        <item>5.8"</item>
+        <item>Right Handed</item>
+        <item>Right arm meduium</item>
+        <item>Wicket Keeper ,Batsman</item>
+        <item>23 dec 2004 </item>
+        <item>India,Super kings IPL,Jharkhand Cricket Team</item>
+    </string-array>
+
+
+    <string-array name="string_major_awards_and_prizes">
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009 </item>
+        <item>2011</item>
+        <item>2018</item>
+    </string-array>
+
+    <string-array name="string_major_awards_and_prizes2">
+        <item>Rajiv Ghandhi khel Ratan Award</item>
+        <item>09 ICC Player of the year</item>
+        <item>Padam Shree Award </item>
+        <item>Honary dactarate award</item>
+        <item>Padam Bhusan Award</item>
+    </string-array>
+
+
+    <string-array name="string_definnig_movement">
+        <item>M.S. Dhoni: The Untold Story is a 2016 Indian bollywood biographical sports film ... The film stars Sushant Singh Rajput as Dhoni, along with Disha Patani, Kiara ..... M.S. Dhoni – The Untold Story (Original Motion Picture Hindi Soundtracks).</item>
+
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="home"><b>Home</b></string>
+    <string name="invites"><b>Invite a friend</b></string>
+    <string name="notification"><b>Notification</b></string>
+    <string name="about"><b>About us</b></string>
+    <string name="privacy"><b>Privacy Policy</b></string>
+    <string name="term"><b>Term &amp; Conditions</b></string>
+    <string name="logout"><b>Logout</b></string>
+
+    <string name="start_typing">Type something</string>
+    <string name="title_activity_straggred">StraggredActivity</string>
+
+</resources>

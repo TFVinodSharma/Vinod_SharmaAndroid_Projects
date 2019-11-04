@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shifoo.com.app.modules.cardviewquiz.fragment.MCQFirstFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/txtfirsttmcq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose the right Combination"
+            android:textColor="@color/faqcolor"
+            android:textSize="@dimen/dimen_16dp" />
+
+        <TextView
+            android:id="@+id/mcqheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/mcqcontent"
+            android:textColor="@color/TopHeadingColor"
+            android:textSize="@dimen/dimen_14dp" />
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/roundwhite"
+                android:elevation="0.5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:padding="20dp"
+                    android:text="A" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Being the friendist person in the class" />
+
+            </LinearLayout>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/roundwhite"
+                android:elevation="0.5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:text="B" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Being the friendist person in the class" />
+
+            </LinearLayout>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/roundwhite"
+                android:layout_marginTop="5dp"
+                android:elevation="0.5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:text="C" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Being the friendist person in the class" />
+
+            </LinearLayout>
+
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/roundwhite"
+                android:elevation="0.5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="20dp"
+                    android:text="D" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Being the friendist person in the class" />
+
+            </LinearLayout>
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/round"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

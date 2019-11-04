@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="shifoo.com.app.modules.cardviewquiz.fragment.ContentTextTypeFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dummy text"
+        android:id="@+id/txttypedummy"
+        android:textColor="@color/faqcolor"
+        android:textSize="@dimen/dimen_16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Managing attitude of team"
+        android:id="@+id/txtTypeHeading"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/TopHeadingColor"
+        android:textSize="@dimen/dimen_14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contentquiz"
+        android:id="@+id/txtTypeContent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/faqcolor"
+        android:textSize="@dimen/dimen_16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/txtfeel"
+            android:text="I would feel"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_forward"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Type Something......"
+        android:textColor="@color/faqcolor"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

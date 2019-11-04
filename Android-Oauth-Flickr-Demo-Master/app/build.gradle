@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.codepath.apps.restclienttemplate"
+        minSdkVersion 10
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+def dbflow_version = "3.1.1"
+apply plugin: 'com.neenbedankt.android-apt'
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.codepath.libraries:android-oauth-handler:1.1.0'
+    compile files('libs/universal-image-loader-1.8.4.jar')
+    apt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+}
