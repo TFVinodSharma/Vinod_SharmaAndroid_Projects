@@ -15,7 +15,7 @@ public class ChangeOrientation extends Service {
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        onConfigurationChanged(1,newC);
+        //onConfigurationChanged(1,newC);
 
         // onConfigurationChanged();
         return null;
